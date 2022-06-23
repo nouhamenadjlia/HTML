@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Réaliser une fiche d'inscription des étudiants à l'université.
+
+Critères:
+Nom, prenom*
+Lieu et Date de naissance*
+Pays d'origine
+Moyenne obtenu en BAC
+Formation*
+D'autres choix de formation possible
+Adresse email*
+Numéro de téléphone*
+Lettre de motivation-->*
+<h1>inscription universitaire</h1>
+<h2>Critères:</h2>
+<form action="#">
+    <!-- Nom -->
+    <label for="nom">Nom : </label><input type="text" id="nom" /><br />
+    <!-- Prenom -->
+    
+    <label for="prenom">Prenom : </label><input type="text" id="prenom" /><br />
+    <!--Lieu et Date de naissance-->
+    <label for="start">Date de naissance:</label>
+    <input type="date" id="start" name="trip-start"
+           value="1990-01-01"
+           min="1990-01-01" max="2005-01-01" id="start"><br>
+    <label for="lieu">Lieu de naissance : </label>
+    <input  type="text" id="lieu"/><br>
+    <!--Pays d'origine-->
+    <label for="pays">Pays d'origine : </label>
+    <input type="text" id="pays"><br>
+    <!--Moyenne obtenu en BAC-->
+    <label for="moyenne">Moyenne obtenu en BAC : </label>
+    <input type="number" id="moyenne" name="moyenne"
+       min="0" max="20"  step="any"><br>
+    <!-- Adresse email -->
+    <label for="email">Adresse email : </label><input type="email" id="email" /><br />
+    <!--Numéro de téléphone-->
+    <label for="phone">Entrer votre Numéro :</label>
+
+    <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+    required>
+    <small>Format: 123-456-7890</small><br>
+
+    <!-- Formation -->
+    <label for="techno">Choisir votre formation : </label>
+    <select id="techno">
+        <option value="">-- Choisir --</option>
+        <option value="biologie">Biologie</option>
+        <option value="fr">Francais</option>
+    </select><br />
+    <!-- Genre -->
+    <label for="genre">Genre : </label><br>
+    <input type="radio" name="genre">Feminin<br />
+    <input type="radio" name="genre">Masculin<br />
+    <br>
+    <label for="motivation">Lettre de motivation :</label><br>
+    <textarea  id="motivation"></textarea><br>
+    <input type="submit" value="Soumettre">
+</form>
+    
+</body>
+</html>
