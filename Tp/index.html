@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tp HTML</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Histoire d’Internet</h1>
+    <h1 class="main-title">Histoire d’Internet</h1>
     <p>L’<strong>histoire d'Internet</strong> remonte au développement des premiers réseaux de télécommunication.
         L’idée d’un réseau informatique, permettant aux utilisateurs de différents ordinateurs de
         communiquer, se développa par de nombreuses étapes successives. La somme de tous ces
@@ -20,7 +21,7 @@
         Deux phases d'accélérations se produisirent : à la fin des années 1960-1970, l’application
         pratique des concepts évoqués à la fin des années 1950 et ensuite, dans les années 1990,
         lorsque la popularisation des fondements de l’Internet moderne passa par l’apparition du World
-        Wide Web <a style="text-decoration:none;color:red" href="pages/World-Wide-Web.html">[lien vers la page World Wide Web]</a>.
+        Wide Web <a class="lien" href="pages/World-Wide-Web.html">[World Wide Web]</a>.
     </p>
     <p> 
         L’infrastructure d’Internet se répandit autour du monde pour créer le large réseau mondial
@@ -30,8 +31,8 @@
         contribua à modifier fondamentalement l’économie mondiale, y compris avec les retombées de
         la bulle Internet.
     </p>
-    <h2>Chronologie sélective</h2>
-    <table border="1">
+    <h2 class="secondary-title">Chronologie sélective</h2>
+    <table>
         <thead>
             <tr>
                 <th><strong>Année</strong></th>
@@ -159,10 +160,11 @@
             
         </tbody>
     </table>
-    <img src="images/Copie de web-server.jpg"  width="600" alt="image web serveur">
-    <figcaption>Fig.1 - Le premier serveur web, actuellement au musée du CERN, étiqueté « This machine is a server. DO NOT POWER IT DOWN!! »</figcaption>
-    
-    <h2>Protocole TCP/IP</h2>
+    <div class="container">
+        <img class="image" src="images/Copie de web-server.jpg"  width="600" alt="image web serveur">
+        <figcaption>Fig.1 - Le premier serveur web, actuellement au musée du CERN, étiqueté « This machine is a server. DO NOT POWER IT DOWN!! »</figcaption>
+    </div>
+    <h2 class="secondary-title">Protocole TCP/IP</h2>
     <p>
         L'abondante diversité des méthodes de communications réseau amena un besoin
         d'uniformisation. Robert E. Kahn recruta Vinton G. Cerf de l'université Stanford dans le but de
@@ -173,7 +175,7 @@
         Hubert Zimmermann et Louis Pouzin (développeurs du réseau Cyclades) un important travail de
         développement.
     </p>
-    <p>
+    <p class="para">
         Avec le rôle du réseau physique réduit à son strict minimum, il devint alors possible de
         fusionner à peu près tout type de réseau sans tenir compte de leurs caractéristiques et ainsi
         résoudre le problème que s'était posé Robert E. Kahn à ses débuts. La DARPA accepta de

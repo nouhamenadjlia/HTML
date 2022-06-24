@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
+
+
+body{
+    background:#9b9a9c;
+    font-family: "Roboto";
+    justify-content: center;
+    margin: 40px;
+}
+.main-title{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.lien{
+    color: red;
+}
+.lien:hover{
+    cursor: pointer;
+}
+.secondary-title{
+    color: red;
+    font-size: 18px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+  
+    }
+
+/**/
+tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+table th {
+    color: white;
+    background: black;
+    padding: 10px;
+    font-size: 16px;
+}
+table tr:hover{
+    background: #4E4E4D;
+    cursor: pointer;
+}
+.container {
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid red;
+    color: white;
+    background: #545354;
+    margin: 15px 0px 15px 0px;
+}
+
+ .image{
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.container figcaption{
+    font-style: italic;
+    text-align: left;
+    font-size:16px ;
+}
+.para{
+    color:#8403fc;
+    border: dashed 2px #8403fc;
+    background:#7c7a7d;
+    padding: 20px;
+}

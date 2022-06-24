@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP6</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+    <h1>Creer un contact</h1>
+    <form class="div-form">
+        <!-- Prenom -->
+        <div class="underline-input" ><label for="prenom">Prénom </label><input class="input_field" type="text" id="prenom" /></div>
+         <!-- Nom -->
+        <div class="underline-input"><label for="nom">Nom </label><input  class="input_field" type="text" id="nom" /></div>
+       <!-- Adresse email -->
+        <div class="underline-input"><label for="email">Email </label><input  class="input_field" type="email" id="email" /></div>
+      <!--numero-->
+        <div class="underline-input"> <label for="phone"> Numéro de contact</label>
+            <input  class="input_field" type="tel" id="phone" name="phone"
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+        </div>
+        
+        <!--Poste-->
+        <div class="underline-input"><label for="poste">Poste </label><input class="input_field"  type="text" id="poste" /></div>
+        <!--adresse-->
+        <div class="underline-input"><label for="adresse"> Adresse </label><input  class="input_field" type="text" id="adresse" /></div>
+        <div >
+            <button class="button" type="submit">Créer</button>
+        </div>
+    </form>
+</body>
+</html>
